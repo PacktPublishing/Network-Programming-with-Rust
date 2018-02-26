@@ -1,0 +1,8 @@
+[package]
+name = "trust-dns-example"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+trust-dns-resolver = "0.6.0"
+trust-dns = "0.12.0"

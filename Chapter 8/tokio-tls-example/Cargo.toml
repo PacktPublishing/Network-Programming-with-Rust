@@ -1,0 +1,15 @@
+[package]
+name = "tokio-tls-example"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+hyper = "0.11.7"
+futures = "0.1.17"
+net2 = "0.2.31"
+tokio-core = "0.1.10"
+num_cpus = "1.0"
+native-tls = "*"
+tokio-service = "*"
+tokio-proto = "*"
+tokio-tls = { version = "0.1", features = ["tokio-proto"] }

@@ -1,0 +1,14 @@
+[[package]]
+name = "ipnetwork"
+version = "0.12.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "ipnetwork-example"
+version = "0.1.0"
+dependencies = [
+ "ipnetwork 0.12.7 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum ipnetwork 0.12.7 (registry+https://github.com/rust-lang/crates.io-index)" = "2134e210e2a024b5684f90e1556d5f71a1ce7f8b12e9ac9924c67fb36f63b336"

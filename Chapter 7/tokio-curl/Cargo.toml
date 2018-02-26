@@ -1,0 +1,9 @@
+[package]
+name = "tokio-curl"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+tokio-curl = "0.1"
+tokio-core = "0.1"
+curl = "0.4.8"

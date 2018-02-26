@@ -1,0 +1,9 @@
+[package]
+name = "may-http"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+may_minihttp = { git = "https://github.com/Xudong-Huang/may_minihttp.git" }
+may = "0.2.0"
+num_cpus = "1.7.0"

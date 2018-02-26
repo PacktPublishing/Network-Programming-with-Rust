@@ -1,0 +1,8 @@
+[package]
+name = "futures-bilock"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+futures = "0.1"
+rand = "0.3.18"

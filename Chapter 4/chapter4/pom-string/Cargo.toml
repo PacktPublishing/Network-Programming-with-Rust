@@ -1,0 +1,7 @@
+[package]
+name = "pom-string"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+pom = "1.1.0"

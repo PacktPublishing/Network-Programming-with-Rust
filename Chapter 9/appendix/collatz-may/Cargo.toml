@@ -1,0 +1,8 @@
+[package]
+name = "collatz-may"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+may = "0.2.0"
+generator = "0.6"

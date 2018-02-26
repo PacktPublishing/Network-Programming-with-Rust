@@ -1,0 +1,10 @@
+[package]
+name = "futures-chaining"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+tokio-timer = "0.1.2"
+futures = "0.1.17"
+futures-cpupool = "0.1.7"
+rand = "*"

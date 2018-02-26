@@ -1,0 +1,18 @@
+[package]
+authors = ["Foo <foo@bar.com>"]
+name = "rocket-blog"
+version = "0.1.0"
+
+[dependencies]
+rocket = "0.3.5"
+rocket_codegen = "0.3.5"
+rocket_contrib = "0.3.5"
+diesel = { version = "0.16.0", features = ["sqlite"] }
+diesel_codegen = { version = "0.16.0", features = ["sqlite"] }
+dotenv = "0.10.1"
+serde = "1.0.21"
+serde_json = "1.0.6"
+serde_derive = "1.0.21"
+lazy_static = "0.2.11"
+r2d2 = "0.7.4"
+r2d2-diesel = "0.16.0"

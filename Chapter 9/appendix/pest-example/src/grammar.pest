@@ -1,0 +1,11 @@
+newline = { "\n" }
+carriage_return = { "\r" }
+space = { " " }
+get = { "GET" }
+post = { "POST" }
+sep = { "/" }
+version = { "HTTP/1.1" }
+chars = { 'a'..'z' | 'A'..'Z' }
+request = { get | post }
+
+ident_list = _{ request ~ space ~ sep ~ chars+ ~ sep ~ space ~ version ~ carriage_return ~ newline }

@@ -1,0 +1,13 @@
+[package]
+authors = ["Foo<foo@bar.com>"]
+name = "rocket-templates"
+version = "0.1.0"
+
+[dependencies]
+rocket = "0.3.5"
+rocket_codegen = "0.3.5"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["tera_templates"]

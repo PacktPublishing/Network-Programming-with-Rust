@@ -1,0 +1,8 @@
+[package]
+name = "pest-example"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+pest = "^1.0"
+pest_derive = "^1.0"

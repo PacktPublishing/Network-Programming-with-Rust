@@ -1,0 +1,12 @@
+[package]
+name = "collatz-multiplexed"
+version = "0.1.0"
+authors = ["Foo <foo@bar.com>"]
+
+[dependencies]
+bytes = "0.4"
+futures = "0.1"
+tokio-io = "0.1"
+tokio-core = "0.1"
+tokio-proto = "0.1"
+tokio-service = "0.1"

@@ -1,0 +1,8 @@
+[package]
+name = "rayon-parallel"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+rayon = "0.9.0"
+rustc-test = "0.3.0"

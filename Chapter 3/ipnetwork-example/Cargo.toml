@@ -1,0 +1,7 @@
+[package]
+name = "ipnetwork-example"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+ipnetwork = "0.12.7"
