@@ -1,0 +1,9 @@
+[package]
+name = "lettre-example"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+lettre = "0.7"
+uuid = "0.5.1"
+native-tls = "0.1.4"

@@ -1,0 +1,7 @@
+[package]
+name = "tftp-example"
+version = "0.1.0"
+authors = ["Abhishek Chanda <abhishek.becs@gmail.com>"]
+
+[dependencies]
+tftp_server = "0.0.2"

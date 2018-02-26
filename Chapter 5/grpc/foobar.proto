@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package foobar;
+
+service FooBarService {
+    rpc record_cab_location(CabLocationRequest) returns (CabLocationResponse);
+    rpc get_cabs(GetCabRequest) returns (GetCabResponse);
+}
+
+message CabLocationRequest {
+    string name = 1;
+    Location location = 2;
+}
+
+message CabLocationResponse {
+    bool accepted = 1;
+}
+
+message GetCabRequest {
+    Location location = 1;
+}
+
+message GetCabResponse {
+    repeated Cab cabs = 1;
+}
+
+message Cab {
+    string name = 1;
+    Location location = 2;
+}
+
+message Location {
+    float latitude = 1;
+    float longitude = 2;
+}
