@@ -13,7 +13,7 @@ fn main() {
         let tx = tx.clone();
         let handle = thread::spawn(move || {
             let s = format!("Thread {} added {} and {}, result {}", i, rhs[i], lhs[i], rhs[i] + lhs[i]);
-            tx.clone().send(s).unwrap();
+            tx.send(s).unwrap();
         });
         let _ = handle.join().unwrap();
     }
