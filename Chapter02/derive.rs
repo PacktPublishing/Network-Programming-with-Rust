@@ -1,7 +1,7 @@
 use std::fmt;
 use std::fmt::Display;
 
-#[derive(Debug, Hash)]
+#[derive(Debug)]
 struct Point<T> {
     x: T,
     y: T,
