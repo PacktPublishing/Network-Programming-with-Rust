@@ -1,6 +1,6 @@
 use super::schema::posts;
 use rocket::{Request, Data};
-use rocket::data::{self, FromData};
+use rocket::data::{FromDataSimple, Outcome};
 use rocket::http::Status;
 use rocket::Outcome::*;
 use serde_json;
@@ -22,11 +22,11 @@ pub struct PostData {
     pub pinned: bool,
 }
 
-impl FromData for PostData {
+impl FromDataSimple for PostData {
     type Error = String;
 
     #[allow(unused_variables)]
-    fn from_data(req: &Request, data: Data) -> data::Outcome<Self, String> {
+    fn from_data(req: &Request, data: Data) -> Outcome<Self, String> {
         let reader = data.open();
         match serde_json::from_reader(reader).map(|val| val) {
             Ok(value) => Success(value),
