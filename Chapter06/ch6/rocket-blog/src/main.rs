@@ -2,13 +2,12 @@
 
 #[macro_use]
 extern crate diesel;
-#[macro_use]
 extern crate dotenv;
 extern crate serde_json;
 #[macro_use]
 extern crate lazy_static;
 #[macro_use] extern crate rocket;
-#[macro_use] extern crate rocket_contrib;
+extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
 extern crate r2d2;
@@ -40,7 +39,7 @@ fn post_get(db: DB, id: i32) -> Result<Json<Post>, ApiError> {
     Ok(Json(post))
 }
 
-#[post("/posts", format = "application/json", data = "<post>")]
+#[post("/posts", format = "json", data = "<post>")]
 fn post_create(db: DB, post: PostData) -> Result<Created<String>, ApiError> {
     let post = create_post(&db, post);
     let url = format!("/post/{}", post);
