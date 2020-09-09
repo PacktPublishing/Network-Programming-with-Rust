@@ -1,14 +1,12 @@
-#![feature(plugin)]
-#![plugin(rocket_codegen)]
-extern crate rocket;
+#![feature(decl_macro)]
+
 #[macro_use]
 extern crate diesel;
-#[macro_use]
-extern crate diesel_codegen;
 extern crate dotenv;
 extern crate serde_json;
 #[macro_use]
 extern crate lazy_static;
+#[macro_use] extern crate rocket;
 extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
@@ -24,7 +22,7 @@ mod error;
 use db::DB;
 use post::{get_posts, get_post, create_post, delete_post, update_post};
 use models::*;
-use rocket_contrib::Json;
+use rocket_contrib::json::Json;
 use rocket::response::status::{Created, NoContent};
 use rocket::Rocket;
 use error::ApiError;
@@ -41,7 +39,7 @@ fn post_get(db: DB, id: i32) -> Result<Json<Post>, ApiError> {
     Ok(Json(post))
 }
 
-#[post("/posts", format = "application/json", data = "<post>")]
+#[post("/posts", format = "json", data = "<post>")]
 fn post_create(db: DB, post: PostData) -> Result<Created<String>, ApiError> {
     let post = create_post(&db, post);
     let url = format!("/post/{}", post);
@@ -65,5 +63,5 @@ fn rocket() -> Rocket {
 }
 
 fn main() {
-        rocket().launch();
+    rocket().launch();
 }
